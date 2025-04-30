@@ -1,0 +1,27 @@
+&target
+        material = "Fe"
+        length_cm = 20,
+        radius_cm = 20,
+        include_attenuation = 0
+&end
+
+&primary_shield
+        material = "Concrete",
+        thickness_cm = 140.0,
+        distance_cm = 450,
+        angle_deg = 0.0
+&end
+
+&secondary_shield
+        material = "Pb",
+        thickness_cm = 5
+&end
+
+&run
+        beam_energy_GeV = 0.375
+        output = shield.sdds
+        theta_min_deg = 0
+        theta_max_deg = 64
+        n_theta = 65
+&end
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+\rm *-*Pb.in *-*Pb.sdds
+

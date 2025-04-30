@@ -1,0 +1,12 @@
+Simple example of running shield program
+
+shieldData.sdds
+        Material data file. You can also use the one distributed with the
+        program.
+
+shield.in
+        shield input file
+
+runScript
+        Bash script file to run simulation and make a plot
+

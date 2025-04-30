@@ -1,0 +1,5 @@
+#!/bin/bash
+
+shield shield.in -dataFile=shieldData.sdds
+sddsplot -graph=line,vary -legend=edit=%/Dose// -mode=linlog \
+    -column=x,totalDose shield.sdds -column=x,gammaDose shield.sdds -column=x,neutronDose shield.sdds 

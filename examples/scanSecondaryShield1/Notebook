@@ -1,0 +1,14 @@
+Example of running shield program in a loop to scan the thickness of a secondary shield
+
+shieldData.sdds
+        Material data file. You can also use the one distributed with the
+        program.
+
+shieldTemplate.in
+        shield input file template
+
+runScript
+        Bash script file to run simulation and make a plot
+
+cleanUp
+        Bash script to clean up output files

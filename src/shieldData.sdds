@@ -1,0 +1,21 @@
+SDDS1
+&column name=Material type=string &end
+&column name=Z type=long &end
+&column name=A type=double units=g/mole &end
+&column name=rho type=double units="g/cm$a3$n" &end
+&column name=X0 type=double units="g/cm$a2$n" &end
+&column name=R0 type=double units="g/cm$a2$n" &end
+&column name=XmfpGRNs, type=double, units="g/cm$a2$n" &end
+&column name=XmfpMIDs, type=double, units="g/cm$a2$n" &end
+&column name=XmfpHENs, type=double, units="g/cm$a2$n" &end
+&column name=XmfpGamD, type=double, units="g/cm$a2$n" &end
+&column name=XmfpGamI, type=double, units="g/cm$a2$n" &end
+&data mode=ascii no_row_counts=1 &end
+Concrete 8.95 17.8 2.35 25.7 10.7 40.0 65.0 120.0 46.3 120.0
+Fe 26 55.85 7.87 13.84 10.7 46.8 145.0 145.0 33.6 145.0
+Pb 82 207.19 11.35 6.37 14.2 97.4 200.0 200.0 23.9 200.0
+Al 13 26.98 2.699 24.01 9.98 34.2 114.0 114.0 46.2 114.0
+Cu 29 63.55 8.96 12.86 10.99 51.7 152.0 152.0 32.6 152.0
+W 74 183.84 19.3 6.76 14.06 90.9 184.0 184.0 24.9 184.0
+Soil 7.96 15.8 1.771 26.7 11.1 33.0 65.0 120.0 48.5 120.0
+Magnetite 13 27.0 3.53 26.7 11.1 45.0 70.0 125.0 38.5 125.0

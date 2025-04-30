@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for t in 5 10 15 20 25 30 ; do
+    replaceText shieldTemplate.in shield-${t}cmPb.in -original='<t>' -repl=$t 
+    shield shield-${t}cmPb.in -dataFile=shieldData.sdds
+done
+
+sddsplot shield-?cmPb.sdds shield-??cmPb.sdds -graph=line,vary -column=theta,totalDose -legend=file,edit=Z-%/.sdds//
+
