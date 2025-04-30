@@ -10,13 +10,13 @@ exec ./rpmdev-setuptree
 exec cp -f shield.spec $env(HOME)/rpmbuild/SPECS/
 exec rm -rf $env(HOME)/rpmbuild/BUILD/$name
 exec mkdir $env(HOME)/rpmbuild/BUILD/$name
-set binFiles "[glob ../../../bin/linux-x86_64/shield]"
+set binFiles "[glob ../bin/Linux-x86_64/shield]"
 foreach f $binFiles {
   exec chmod a+rx $f
   exec chmod a-w $f
   exec cp -f $f $env(HOME)/rpmbuild/BUILD/${name}/
 }
-exec cp -f ../shieldData.sdds $env(HOME)/rpmbuild/BUILD/${name}/
+exec cp -f ../src/shieldData.sdds $env(HOME)/rpmbuild/BUILD/${name}/
 cd $env(HOME)/rpmbuild/BUILD
 exec tar -cvf ../SOURCES/${name}.tar $name
 exec rm -f ../SOURCES/${name}.tar.gz
